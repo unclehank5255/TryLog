@@ -17,7 +17,7 @@ namespace TryLog.Models
         [Index("IX_Goal_Date", 2, IsUnique = true)]
         public DateTime Date { get; set; }
 
-        public CheckInStatus Status { get; set; }
+        public CheckInStatus? Status { get; set; }
 
         [StringLength(200)]
         public string Note { get; set; }

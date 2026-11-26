@@ -13,7 +13,7 @@ namespace TryLog.Models
         public int Id { get; set; }
 
         [Required]
-        [StringLength(30)]
+        [StringLength(20)]
         public string UserName { get; set; }
 
         [Required]
@@ -28,6 +28,15 @@ namespace TryLog.Models
         [Required]
         [StringLength(64)]
         public string TimeZone { get; set; }
+
+        [StringLength(64)]
+        public string PendingTimeZone { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime? TimeZoneEffectiveDate { get; set; }
+
+        [Range(0, 8)]
+        public byte AvatarColor { get; set; }
 
         public bool IsEmailVerified { get; set; }
 
@@ -66,5 +75,6 @@ namespace TryLog.Models
         public virtual ICollection<Goal> Goals { get; set; }
         public virtual ICollection<DailyMood> Moods { get; set; }
         public virtual ICollection<PushSubscription> PushSubscriptions { get; set; }
+        public virtual ICollection<EmailChangeRequest> EmailChangeRequests { get; set; }
     }
 }

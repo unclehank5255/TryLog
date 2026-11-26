@@ -137,11 +137,20 @@
     <Compile Include="Migrations\202611152055451_InitialCreate.Designer.cs">
       <DependentUpon>202611152055451_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202611251009068_AddEmailChangeAndUserSettings.cs" />
+    <Compile Include="Migrations\202611251009068_AddEmailChangeAndUserSettings.Designer.cs">
+      <DependentUpon>202611251009068_AddEmailChangeAndUserSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202611260606201_UserNameLengthAndDeviceInfo.cs" />
+    <Compile Include="Migrations\202611260606201_UserNameLengthAndDeviceInfo.Designer.cs">
+      <DependentUpon>202611260606201_UserNameLengthAndDeviceInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppUser.cs" />
     <Compile Include="Models\Attempt.cs" />
     <Compile Include="Models\CheckIn.cs" />
     <Compile Include="Models\DailyMood.cs" />
+    <Compile Include="Models\EmailChangeRequest.cs" />
     <Compile Include="Models\Enums.cs" />
     <Compile Include="Models\Goal.cs" />
     <Compile Include="Models\GoalSchedule.cs" />
@@ -235,6 +244,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202611152055451_InitialCreate.resx">
       <DependentUpon>202611152055451_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202611251009068_AddEmailChangeAndUserSettings.resx">
+      <DependentUpon>202611251009068_AddEmailChangeAndUserSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202611260606201_UserNameLengthAndDeviceInfo.resx">
+      <DependentUpon>202611260606201_UserNameLengthAndDeviceInfo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

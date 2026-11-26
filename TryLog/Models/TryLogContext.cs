@@ -18,7 +18,8 @@ namespace TryLog.Models
         public DbSet<Attempt> Attempts { get; set; }
         public DbSet<CheckIn> CheckIns { get; set; }
         public DbSet<DailyMood> DailyMoods { get; set; }
-
+        public DbSet<PushSubscription> PushSubscriptions { get; set; }
+        public DbSet<EmailChangeRequest> EmailChangeRequests { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

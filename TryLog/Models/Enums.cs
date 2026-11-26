@@ -11,13 +11,14 @@ namespace TryLog.Models
     public enum GoalSortMode
     {
         ReminderTime = 0,
-        Custom = 1
+        Name = 1
     }
 
     public enum ThemeName
     {
-        Milk = 0,
-        Cool = 1
+        Auto = 0,
+        Light = 1,
+        Dark = 2
     }
 
     public enum FrequencyType
@@ -50,5 +51,20 @@ namespace TryLog.Models
     {
         Useful = 1,
         NotUseful = 2
+    }
+
+    public enum EmailChangeStatus
+    {
+        Pending = 0,
+        Completed = 1,
+        Cancelled = 2,
+        Reverted = 3
+    }
+
+    public enum DayState
+    {
+        Past,
+        Today,
+        Future
     }
 }
