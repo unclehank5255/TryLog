@@ -27,6 +27,13 @@ namespace TryLog.Models
         public string Auth { get; set; }
 
         [Required]
+        [StringLength(100)]
+        public string DeviceName { get; set; }
+
+        [Column(TypeName = "datetime2")]
+        public DateTime CreatedAt { get; set; }
+
+        [Required]
         [ForeignKey("UserId")]
         public virtual AppUser User { get; set; }
     }

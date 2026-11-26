@@ -12,7 +12,7 @@
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(TryLog.Models.TryLogContext context)
+        protected override void Seed(Models.TryLogContext context)
         {
             //  This method will be called after migrating to the latest version.
 
